@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-yellow: #F4D04E;
+    --color-gray-950: #111111;
+    --color-gray-500: #6B6B6B;
+    --color-white: #fff;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-yellow);
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    width: 384px;
+    height: 522px;
+    padding: 24px;
+    color: var(--color-gray-950);
+    background-color: var(--color-white);
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px #000;
+    line-height: 150%;
+    transition: .3s;
+}
+
+main:hover {
+    transform: translateY(-7px);
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 0;
+}
+
+.content h3 {
+    width: 82px;
+    height: 29px;
+    font-size: 0.875em;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 29px;
+    background-color: var(--color-yellow);
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.content h3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 10px var(--color-yellow);
+    color: var(--color-white);
+}
+
+.content h1 {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.content h1:hover {
+    cursor: pointer;
+    color: var(--color-yellow);
+}
+
+.content .description {
+    color: var(--color-gray-500);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.875em;
+}
+
+.author img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.875em;
+    color: var(--color-gray-500);
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+footer a:hover {
+    color: var(--color-yellow);
+}
