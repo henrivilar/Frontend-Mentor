@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2, p, a, div {
+    font-family: "Inter", serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.container {
+    height: 75%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .infos h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.profile .infos .location {
+    color: hsl(75, 94%, 57%);
+}
+
+.links ul {
+    text-align: center;
+}
+
+.links ul li {
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px 80px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.links ul li:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+.links ul li a {
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(0, 0%, 12%);
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.attribution a {
+    color: hsl(75, 94%, 57%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
