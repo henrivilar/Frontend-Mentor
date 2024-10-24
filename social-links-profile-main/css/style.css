@@ -14,8 +14,8 @@ h2, p, a, div {
 }
 
 .container {
-    height: 75%;
-    width: 25%;
+    height: 550px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,20 +58,25 @@ h2, p, a, div {
 }
 
 .links ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.links ul li a {
     background-color: hsl(0, 0%, 20%);
-    padding: 10px 80px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 90px;
     margin-bottom: 12px;
     border-radius: 8px;
     cursor: pointer;
     transition: .2s;
 }
 
-.links ul li:hover {
+.links ul li a:hover {
     background-color: hsl(75, 94%, 57%);
-}
-
-.links ul li a {
-    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
 }
 
 footer {
@@ -89,4 +94,10 @@ footer {
 
 .attribution a:hover {
     text-decoration: underline;
+}
+
+@media (width <= 400px) {
+    .attribution, .attribution a {
+        font-size: 10px;
+    }
 }
