@@ -1,6 +1,6 @@
 :root {
-    --font-young: font-family: "Young Serif", serif;
-    --font-outfit:
+    --font-young: "Young Serif", serif;
+    --font-outfit: "Outfit", serif;
     --Stone-100: hsl(30, 54%, 90%);
     --Stone-150: hsl(30, 18%, 87%);
     --Stone-600: hsl(30, 10%, 34%);
@@ -11,13 +11,28 @@
 }
 
 body {
-    background-color: ;
+    background-color: var(--Stone-100);
+    padding-top: 60px;
+    font-family: var(--font-outfit)
 }
 
 .container {
-    width: 70vw;
+    width: 50vw;
+    margin: 0 auto;
+    background-color: var(--Rose-50);
+    padding: 50px;
+    border-radius: 20px;
 }
 
 .omelettte img {
-    width: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.omelettte h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-young);
+    color: var(--Stone-900);
+    margin: 30px 0;
 }
